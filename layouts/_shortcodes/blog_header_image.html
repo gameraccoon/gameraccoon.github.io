@@ -1,0 +1,5 @@
+{{- with .Get "path" }}
+  <img src="{{ ($.Get "path") }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ ($.Get "alt") }}"/>
+{{- else }}
+  {{- errorf "The %q shortcode requires a 'path' argument: see %s" .Name .Position }}
+{{- end -}}

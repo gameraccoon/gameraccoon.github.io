@@ -1,0 +1,5 @@
+{{- with .Get "text" }}
+	<figcaption>{{ ($.Get "text") }}</figcaption>
+{{- else }}
+  {{- errorf "The %q shortcode requires a 'text' argument: see %s" .Name .Position }}
+{{- end -}}

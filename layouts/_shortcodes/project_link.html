@@ -1,0 +1,17 @@
+{{- with .Get "name" }}
+  {{ ($.Get "name") }}:
+{{- else }}
+  {{- errorf "The %q shortcode requires a 'name' argument: see %s" .Name .Position }}
+{{- end -}}
+
+{{- with .Get "url" }}
+  <a href="{{ ($.Get "url") }}" target="_blank" rel="noreferrer noopener">
+{{- else }}
+  {{- errorf "The %q shortcode requires a 'url' argument: see %s" .Name .Position }}
+{{- end -}}
+
+{{- with .Get "link_text" }}
+  {{ ($.Get "link_text") }}</a><br/>
+{{- else }}
+  {{ ($.Get "url") }}</a><br/>
+{{- end -}}

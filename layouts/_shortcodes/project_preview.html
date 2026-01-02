@@ -1,0 +1,21 @@
+<div style="text-align: center;">
+{{- with .Get "preview_image" }}
+  {{- with $r := $.Page.Resources.Get ($.Get "preview_image") }}
+      {{- with $r.Process (printf "resize %dx wepb" 300) }}
+        <a href="{{ ($.Get "preview_image") }}" target="_blank" rel="noreferrer noopener"><img src="{{ .RelPermalink }}"></a><br/>
+      {{- end }}
+  {{- else }}
+    {{- errorf "The %q shortcode was unable to find %s: see %s" $.Name ($.Get "preview_image") $.Position }}
+  {{- end }}
+{{- end -}}
+
+{{- with .Get "name" }}
+  <strong>{{ ($.Get "name") }}</strong> {{ ($.Get "years") }}<br/>
+{{- else }}
+  {{- errorf "The %q shortcode requires a 'name' argument: see %s" .Name .Position }}
+{{- end -}}
+
+{{- with .Get "badge" }}
+<img src="https://img.shields.io/badge/{{ ($.Get "badge") }}?style=flat"/></br>
+{{- end -}}
+</div>

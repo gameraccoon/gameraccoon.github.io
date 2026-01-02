@@ -4,7 +4,7 @@ draft = false
 title = 'Borderline Postmortem'
 type = "blog"
 +++
-![](/projects/borderline-render.png)
+![](../../../../projects/borderline-render.png)
 
 [Borderline](https://igorsgames.itch.io/borderline) is a game developed for [8 bits to Infinity game jam](https://itch.io/jam/asymmetrical-jam) for 7 days by a team of 4 people:
 

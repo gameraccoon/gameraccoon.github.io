@@ -3,6 +3,7 @@ date = '2026-01-02T08:03:06+01:00'
 draft = false
 title = 'Projects'
 menus = 'main'
+weight = 20
 +++
 
 ## Projects

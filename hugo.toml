@@ -6,7 +6,9 @@ author = "Pavel Grebnev"
 copyright = "Copyright © 2025, Pavel Grebnev."
 languageCode = "en-US"
 
+sectionPagesMenu = 'main'
 enableRobotsTXT = true
+
 [params]
   description = "Pavel Grebnev CV and blog"
 
@@ -28,7 +30,7 @@ enableRobotsTXT = true
   # By default, if you want to read more than one blog post you have to always go
   # back to the /blog page.
   # By enabling this feature each blog post will have at the end a navigator
-  # enablePostNavigator = true
+  enablePostNavigator = true
 
   # By default, this theme displays dates with a format like "02 Jan, 2006", but
   # you can customize it by setting the `dateFormat` param in your site's config
@@ -41,7 +43,7 @@ enableRobotsTXT = true
 # https://gohugo.io/configuration/markup/#highlight
 [markup]
   [markup.highlight]
-    style = 'friendly'
+    style = 'monokai'
     lineNos = true
     lineNumbersInTable = false
     codeFences = true
@@ -49,4 +51,3 @@ enableRobotsTXT = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-

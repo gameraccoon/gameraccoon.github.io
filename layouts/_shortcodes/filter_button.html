@@ -1,0 +1,10 @@
+{{- with .Get "badge" }}
+    {{- with $.Get "disabled" }}
+        <a class="{{ $.Get "badge" }} filter_button_enabled" onClick="if ([].slice.call(document.querySelectorAll('.filter_button_disabled')).filter(function(el) {return getComputedStyle(el).display === 'inline';}).length === 0) {document.querySelectorAll('.project_block').forEach(function(el) {el.style.display='none';});document.querySelectorAll('.filter_button_enabled').forEach(function(el) {el.style.display='none';});document.querySelectorAll('.filter_button_disabled').forEach(function(el) {el.style.display='inline';});document.querySelectorAll('.{{ $.Get "badge" }}').forEach(function(el) {el.style.display='inline';});document.querySelectorAll('.{{ $.Get "disabled" }}').forEach(function(el) {el.style.display='none';});} else {document.querySelectorAll('.filter_button_enabled').forEach(function(el) {el.style.display='inline'});document.querySelectorAll('.filter_button_disabled').forEach(function(el) {el.style.display='none'});document.querySelectorAll('.project_block').forEach(function(el) {el.style.display='inline'});}"><img src="https://img.shields.io/badge/{{ ($.Get "badge") }}?style=flat"/></a>
+        <a style="display: none" class="{{ $.Get "disabled" }} filter_button_disabled" onClick="document.querySelectorAll('.project_block').forEach(function(el) {el.style.display='none';});document.querySelectorAll('.filter_button_enabled').forEach(function(el) {el.style.display='none';});document.querySelectorAll('.filter_button_disabled').forEach(function(el) {el.style.display='inline';});document.querySelectorAll('.{{ $.Get "badge" }}').forEach(function(el) {el.style.display='inline';});style.display='none'"><img src="https://img.shields.io/badge/{{ ($.Get "disabled") }}?style=flat"/></a>
+    {{- else }}
+        {{- errorf "The %q shortcode requires 'disabled' argument: see %s" .Name .Position }}
+    {{- end -}}
+{{- else }}
+    {{- errorf "The %q shortcode requires 'badge' argument: see %s" .Name .Position }}
+{{- end -}}

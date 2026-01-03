@@ -1,3 +1,9 @@
+{{- with .Get "badge" }}
+  <div class="project_block {{ ($.Get "badge") }}">
+{{- else }}
+  {{- errorf "The %q shortcode requires 'badge' argument: see %s" .Name .Position }}
+{{- end -}}
+
 <div style="text-align: center;">
 {{- with .Get "preview_image" }}
   {{- with $r := $.Page.Resources.Get ($.Get "preview_image") }}
@@ -15,7 +21,6 @@
   {{- errorf "The %q shortcode requires a 'name' argument: see %s" .Name .Position }}
 {{- end -}}
 
-{{- with .Get "badge" }}
-<img src="https://img.shields.io/badge/{{ ($.Get "badge") }}?style=flat"/></br>
-{{- end -}}
+<img src="https://img.shields.io/badge/{{ ($.Get "badge") }}?style=flat"/>
+</br>
 </div>

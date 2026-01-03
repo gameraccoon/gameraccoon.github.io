@@ -13,9 +13,9 @@ type = "blog"
 * [Egor Ivanitsky - Art &amp; Level Design](https://www.artstation.com/resed)
 * [Bernard Machado - Sound &amp; Music](https://soundcloud.com/nudsmachado)
 
-We live in different cities (and countries) but sometimes collaborate online to make a game in a limited time, for a lot of fun and experience. This was my second time with the team, the previous time we worked on a 2D platformer ([link](https://ldjam.com/events/ludum-dare/38/catsorbed)).
+We live in different cities (and countries) but sometimes gather online to make a game in a limited time, for fun and experience. This was my second time with the team, the previous time we worked on a 2D platformer ([link](https://ldjam.com/events/ludum-dare/38/catsorbed)).
 
-The topic of the jam this time was **Asymmetrical Gameplay**. At the start of the jam the theme was revealed: **Two Alternate Dimensions**.
+The topic of the game jam this time was **Asymmetrical Gameplay**. At the start of the jam the theme was revealed: **Two Alternate Dimensions**.
 
 {{< toc >}}
 
@@ -28,19 +28,19 @@ Before the jam, we mainly did two things:
 
 We chose UE4 as the engine and decided that we were going to make a 3D game this time.
 
-As for the game ideas, we discussed roughly twelve: time managers, multiplayer shooters, puzzles, stealth actions, and more. The only issue was that all the "asymmetrical" ideas we discussed had a mandatory multiplayer part, which would make them hard to be tested by the judges. We decided to keep it as simple as possible and to make a local multiplayer game with a shared screen if we didn't come up with a singleplayer idea.
+As for the priliminary game ideas, we discussed roughly twelve: time managers, multiplayer shooters, puzzles, stealth actions, and more. The only issue was that all the "asymmetrical" ideas we discussed had a mandatory multiplayer part, which would make them hard to be tested by the judges. We decided to keep it as simple as possible and to make a local multiplayer game with a shared screen if we didn't come up with a singleplayer idea.
 
 As for preparation, before we knew Egor was joining us (so we weren't sure there'd be someone who could model and animate), I was investigating Blender and the animation pipeline for Blender => UE4.
 
 {{< blog_video src=200201_1959.mp4 controls=yes loop=yes >}}
 
-We were also investigating how to make a local multiplayer with the shared camera, and how to reassign controls on the fly (so the players can choose whether they want to use two gamepads, a keyboard and a gamepad, or play on a single keyboard together).
+While waiting, we were also investigating how to make a local multiplayer with the shared camera, and how to reassign controls on the fly (so the players can choose whether they want to use two gamepads, a keyboard and a gamepad, or play on a single keyboard together).
 
 {{< blog_video src=200229_1452.mp4 controls=yes width=600 >}}
 
 ## Theme reveal and jam start
 
-After the theme of the jam was revealed and the jam started, we made a pause for an hour so everyone could think about their own ideas. Then after the pause, we gathered together in a conference call, presented our ideas, listed them all (8 ideas in total), and voted for the best idea.
+After the theme of the jam was revealed and the jam started, we made a pause for an hour so everyone could think about their own ideas. Then after the pause, we gathered together in a call, presented our ideas, listed them all on an online whiteboard (8 ideas in total), and voted for the best idea.
 
 The idea that won our votes was a first-person horror game about a man trapped in a haunted abandoned mental hospital, and who can see ghosts only in mirrors (so they're invisible in reality).
 
@@ -168,7 +168,7 @@ For each point above
 * Make the ghosts deal more damage or make zombies invisible as well
 * Choose more classical shooting mechanics, make the hammer cocking animation after each shot (not before)
 * Trade some development time to improve performance
-* Remove the releasing interruption feature
+* Remove the reloading interruption feature
 
 ## Things that were cut
 

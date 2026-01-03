@@ -9,7 +9,7 @@
   {{- if eq ($.Get "loop") "yes" -}}
     {{- $loop = "loop" -}}
   {{- end -}}
-  <video src="{{ ($.Get "src") }}" {{ $controls }} {{ $loop }} width="{{ ($.Get "width") }}"></video>
+  <video src="{{ ($.Get "src") }}" {{ $controls }} {{ $loop }} width="100%"></video>
 
   {{- with $.Get "caption" }}
     <figcaption>{{ $.Get "caption" }}</figcaption>

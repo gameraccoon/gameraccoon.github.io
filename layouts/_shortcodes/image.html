@@ -3,7 +3,7 @@
     {{- with $.Get "width" }}
       {{- with $r.Process (printf "resize %dx wepb" ($.Get "width" )) }}
         {{- $alt := or ($.Get "alt") "" -}}
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}">
+        <img src="{{ .RelPermalink }}" alt="{{ $alt }}">
       {{- end }}
     {{- else }}
       {{- errorf "The %q shortcode requires a 'width' argument: see %s" $.Name $.Position }}

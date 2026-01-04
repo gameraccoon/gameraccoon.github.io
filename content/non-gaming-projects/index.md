@@ -54,6 +54,6 @@ Written in Go, only Russian is supported at the moment.
 
 Written in C++17.
 
-[sparse_set_container](https://crates.io/crates/sparse_set_container) - a Rust crate with a fast Vec-like container using keys that don't invalidate on insertion/removal, is as fast to iterate over as Vec and has O(1) lookup and insertion complexity. See comparison to other similar crates: [benchmarks](https://github.com/gameraccoon/sparse_set_container?tab=readme-ov-file#benchmarks).
+[sparse_set_container](https://crates.io/crates/sparse_set_container) - a Rust crate with a fast Vec-like container using keys that don't invalidate on insertion/removal, it is as fast to iterate over as Vec and has O(1) lookup and insertion complexity. See comparison to other similar crates: [benchmarks](https://github.com/gameraccoon/sparse_set_container?tab=readme-ov-file#benchmarks).
 
-[reservoir-sampler](https://github.com/gameraccoon/reservoir-sampler) - a tiny C++ library of a few classes to do reservoir sampling.
+[reservoir-sampler](https://github.com/gameraccoon/reservoir-sampler) - a tiny C++ library containing a few classes to do reservoir sampling, aimed to make the randomized sampling from big streams of data as efficient as possible.
